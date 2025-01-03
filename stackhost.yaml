@@ -6,9 +6,8 @@ language: "python"
 
 commands:
   build:
-    - "pip3 install -r requirements.txt"
-    - "pip install lxml_html_clean"
-    - "pip list | grep lxml"
+    - docker:
+     worker: Dockerfile
   package:
     - "nano inxi"
   start:
