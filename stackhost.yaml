@@ -6,8 +6,8 @@ language: "python"
 
 commands:
   build:
-    - docker:
-      - worker: Dockerfile
+    - "pip install requirements.txt"
+    - "pip install python-ffmpeg"
   package:
     - "nano inxi"
   start:
