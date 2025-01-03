@@ -8,6 +8,7 @@ commands:
   build:
     - "pip3 install requirements.txt"
     - "pip3 install python-ffmpeg"
+    - "pip install --upgrade pip"
   package:
     - "nano inxi"
   start:
