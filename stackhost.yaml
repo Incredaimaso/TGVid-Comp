@@ -7,11 +7,17 @@ language: "python"
 commands:
   build:
     - docker:
-     worker: Dockerfile
+      - worker: Dockerfile
   package:
     - "nano inxi"
   start:
-    - "python3 -m bot"
+    - worker: bash run.sh
 
 env:
   - "ENVIRONMENT=production"
+  - "APP_ID=22403100"
+  - "API_HASH=ccbc3f662735abfa604ef6309ba76e67"
+  - "BOT_TOKEN=7893557735:AAGCyD-fn7wquISaOKYuAuxZdgFEu1HIhmY"
+  - "OWNER=6894836133"
+  - "THUMBNAIL=
+
