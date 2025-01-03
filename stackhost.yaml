@@ -6,8 +6,8 @@ language: "python"
 
 commands:
   build:
-    - "pip install requirements.txt"
-    - "pip install python-ffmpeg"
+    - "pip3 install requirements.txt"
+    - "pip3 install python-ffmpeg"
   package:
     - "nano inxi"
   start:
