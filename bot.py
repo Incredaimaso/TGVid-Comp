@@ -30,8 +30,8 @@ class Bot (Client):
             plugins={'root': 'plugins'}
         )
 
-    async def start(self):
-        await super().start()
+    async def start(self, *args, **kwargs):
+        await super().start(*args, **kwargs)
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username
